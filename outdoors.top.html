@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get everything you want to have the best experience in Hokkaido">
+    <script src="https://kit.fontawesome.com/048456fdc5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="top.style.css">
+    <title>Dosanko Direction</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1><a href="index.html"> Dosanko Direction</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="outdoors.top.html">outdoors</a></li>
+                <li><a href="#">cuisine</a></li>
+                <li><a href="#">onsen</a></li>
+                <li><a href="#">festival</a></li>
+                <li><a href="#">city</a></li>
+            </ul>
+        </nav>
+        <p class="float_reset"></p>
+
+        <!-- Navigation Drawer point -->
+        <div id="navd">
+            <i id="open" class="fa-solid fa-bars fa-4x"></i>
+            <i id="close" class="fa-solid fa-xmark fa-4x off" style="color: white;"></i>
+        </div>
+    </header>
+
+    <!-- Navigation Drawer -->
+    <div id="menuContainer" class="inactive">
+        <ul class="menuList">
+            <li><a href="index.html">home</a></li>
+            <li><a href="outdoors.top.html">outdoors</a></li>
+            <li><a href="#">cuisine</a></li>
+            <li><a href="#">onsen</a></li>
+            <li><a href="#">festival</a></li>
+            <li><a href="#">city</a></li>
+        </ul>
+    </div>
+
+    <!-- Main -->
+    <main>
+        <section>
+            <article>
+                <h2>The Great Outdoors</h2>
+                <div id="flexBox">
+                    <div class="box">
+                        <img src="img/img.bluepond.jpg" alt="">
+                        <dt>Shirogane Blue Pond</dt>
+                    </div>
+                    <div class="box">
+                        <img src="img/img.shiretoko.jpg" alt="">
+                        <dt>Shiretoko</dt>
+                    </div>
+                    <div class="box">
+                        <img src="img/img.ski.jpg" alt="">
+                        <dt>Niseko</dt>
+                    </div>
+                    <div class="box">
+                        <img src="img/img.asahidake.jpg" alt="">
+                        <dt>Asahidake</dt>
+                    </div>
+                    <div class="box">
+                        <img src="#" alt="">
+                        <dt>Coming Soon</dt>
+                    </div>
+
+                    <div class="box">
+                        <img src="#" alt="">
+                        <dt>Coming Soon</dt>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!--最新情報-->
+    <aside>
+        <section class="newinfo">
+            <h3>Resent Posts</h3>
+            <iframe src="whatsnew.html" width="666" height="150">
+                The Latest Information
+            </iframe>
+        </section>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <small>&#9400; 2023 DOSANKO DIRECTION ALL RIGTHS RESERVED.</small>
+    </footer>
+
+    <script>
+        'use strict';
+        // ハンバーガーメニュー
+        const openMark = document.getElementById('open');
+        const closeMark = document.getElementById('close');
+        const menuContainer = document.getElementById('menuContainer');
+
+        openMark.addEventListener('click', function () {
+            menuContainer.classList.toggle('inactive');
+            openMark.classList.toggle('close');
+            closeMark.classList.toggle('off');
+        })
+        closeMark.addEventListener('click', function () {
+            menuContainer.classList.toggle('inactive');
+            openMark.classList.toggle('close');
+            closeMark.classList.toggle('off');
+        })
+    </script>
+</body>
+
+</html>
